@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #2e1894;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    padding: 1vw;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3vw;
+}
+
+.navbar .navbar-left h1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.navbar .navbar-right ul {
+    display: flex;
+}
+
+.navbar .navbar-right ul li {
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0.5vw 1vw;
+    margin-left: 0.5vw;
+}
+
+.navbar .navbar-right .purchase {
+    margin-left: 1.5vw;
+    background-color: #e83a7f;
+    border-radius: 1.3vw;
+}
+
+.active {
+    color: grey;
+}
+
+/* Hero */
+.hero {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 1vw;
+    padding-top: 4vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero .hero-left {
+    width: 40%;
+    padding: 1vw 3vw 1vw 0vw;
+}
+
+.hero .hero-left h2 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.hero .hero-left p {
+    font-size: 16px;
+    margin: 1vw 0;
+}
+
+.hero .hero-left button {
+    padding: 0.5vw 1vw;
+    background-color: #e83a7f;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 1.3vw;
+    cursor: pointer;
+    margin-top: 1vw;
+}
+
+.login-modal {
+    padding: 2vw 2.5vw 1vw 2.5vw;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.login-modal h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1vw;
+}
+
+.login-modal form,
+.container {
+    position: relative;
+}
+
+.login-modal form input {
+    border: 1px solid #c0c0c0;
+    border-radius: 1.5vw;
+    padding: 0.7vw 4.5vw 0.7vw 1.5vw;
+    margin-bottom: 1vw;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    color: grey;
+  }
+
+.login-modal form input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked~.checkmark {
+    background-color: #26d0c3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.login-modal form p {
+    font-size: 14px;
+    color: grey;
+}
+
+.login-modal .signin{
+    background-color: #482ce3;
+    color: white;
+    padding: 0.7vw 7vw;
+    border: none;
+    outline: none;
+    border-radius: 5vw;
+    margin-bottom: 8px;
+}
+
+.login-modal .twitter{
+    background-color: #1da1f3;
+    color: white;
+    padding: 0.7vw 5vw;
+    border: none;
+    outline: none;
+    border-radius: 5vw;
+    margin-bottom: 25px;
+}
+
+.login-modal p {
+    font-size: 14px;
+    margin-bottom: 1vw;
+    color: grey;
+    font-weight: 600;
+}
+
+.login-modal p a{
+    text-decoration: none;
+    color: #26d0c3;
+}
